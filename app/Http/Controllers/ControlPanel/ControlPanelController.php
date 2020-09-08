@@ -29,6 +29,6 @@ class ControlPanelController extends Controller
 		// 	'code' => $code['code'],
 		// ]);
 
-		return Redirect::to('/students/register?code=' . $code)->with('code', $code)->with('user', $user);
+		return Redirect::to('/students/register/'. $code)->with('code', $code)->with('user', $user);
 	}
 }

@@ -12,12 +12,7 @@
 
 @section('main-content')
 
-{{-- @if (!Session::has('code'))
-<script>
-	window.location = "{{ route('registration')}}";
-</script>
-@endif --}}
-{{-- {{ Session::get('user') }} --}}
+{{ Request::segment(3) }}
 
 <div id="regiser_from_container" class="register-form-container">
 	<div class="container">
@@ -36,7 +31,12 @@
 							<div class="grid-group">
 								<div class="form-group">
 									<label for="st_name">ชื่อ / สกุล : </label>
-									<input type="text" class="form-control" name="st_name">
+									<input type="text" class="form-control @error('st_name') is-invalid @enderror" name="st_name" value="{{ old('st_name') }}">
+									@error('st_name')
+										<span class="invalid-feeback" role="alert">
+											<strong>{{ $message }}</strong>
+										</span>
+									@enderror
 								</div>
 								<div class="form-group">
 									<label for="st_code">รหัสนักศึกษา : </label>
@@ -61,7 +61,7 @@
 							<div class="grid-group">
 								<div class="form-group">
 									<label for="st_username">ชื่อผู้ใช้งาน: </label>
-									<input type="text" class="form-control" name="st_username">
+									<input type="text" class="form-control" name="st_username" value="{{ Session::get('user') }}">
 								</div>
 								<div class="form-group">
 									<label for="st_email">อีเมล์ : </label>
