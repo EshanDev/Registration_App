@@ -1,0 +1,336 @@
+/*  Flat color palette (full) downloaded from
+ *  http://htmlcolorcodes.com/color-charts/
+ *
+ *  Check out our powerful color picker
+ *  http://htmlcolorcodes.com/color-picker/
+ *
+ *  Want to learn more about colors in SCSS?
+ *  http://htmlcolorcodes.com/tutorials/
+ *
+ *  - - - - - - - - - - - - - - - - - - 
+ *  Credits:
+ *
+ *  Original color palette by
+ *  http://designmodo.github.io/Flat-UI/
+ *
+ *  - - - - - - - - - - - - - - - - - -
+ *  How to use:
+ *  
+ *  Include this file with your other .scss files:
+ *
+ *  @import "flat_colors_full";
+ *  
+ *  and use the color variables in your stylesheets:
+ *	
+ *  .class {
+ *    color: $turquoise-500;
+ *  }
+ *
+ *  - - - - - - - - - - - - - - - - - -
+ *  Note:
+ *
+ *  $color and $color-500 are the same, simply there
+ *  for your convenience.
+ */
+/* Turquoise */
+/* Green Sea */
+/* Emerald */
+/* Nephritis */
+/* Peter River */
+/* Belize Hole */
+/* Amethyst */
+/* Wisteria */
+/* Wet Asphalt */
+/* Midnight Blue */
+/* Sunflower */
+/* Orange */
+/* Carrot */
+/* Pumpkin */
+/* Alizarin */
+/* Pomegranate */
+/* Clouds */
+/* Silver */
+/* Concrete */
+/* Asbestos */
+/*  Want more? Check our our other color palettes at
+ *  http://htmlcolorcodes.com/color-charts/
+ */
+/*  Flat color palette (full) downloaded from
+ *  http://htmlcolorcodes.com/color-charts/
+ *
+ *  Check out our powerful color picker
+ *  http://htmlcolorcodes.com/color-picker/
+ *
+ *  Want to learn more about colors in SCSS?
+ *  http://htmlcolorcodes.com/tutorials/
+ *
+ *  - - - - - - - - - - - - - - - - - - 
+ *  Credits:
+ *
+ *  Original color palette by
+ *  http://designmodo.github.io/Flat-UI/
+ *
+ *  - - - - - - - - - - - - - - - - - -
+ *  How to use:
+ *  
+ *  Include this file with your other .scss files:
+ *
+ *  @import "flat_colors_full";
+ *  
+ *  and use the color variables in your stylesheets:
+ *	
+ *  .class {
+ *    color: $turquoise-500;
+ *  }
+ *
+ *  - - - - - - - - - - - - - - - - - -
+ *  Note:
+ *
+ *  $color and $color-500 are the same, simply there
+ *  for your convenience.
+ */
+/* Turquoise */
+/* Green Sea */
+/* Emerald */
+/* Nephritis */
+/* Peter River */
+/* Belize Hole */
+/* Amethyst */
+/* Wisteria */
+/* Wet Asphalt */
+/* Midnight Blue */
+/* Sunflower */
+/* Orange */
+/* Carrot */
+/* Pumpkin */
+/* Alizarin */
+/* Pomegranate */
+/* Clouds */
+/* Silver */
+/* Concrete */
+/* Asbestos */
+/*  Want more? Check our our other color palettes at
+ *  http://htmlcolorcodes.com/color-charts/
+ */
+#registration_container, .text-indent-30, .container {
+  position: relative;
+}
+
+.container .box {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  transition: width 0.4s ease;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container .box {
+    width: 500px;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container .box {
+    width: 900px;
+    height: inherit;
+  }
+}
+
+.text-indent-30 {
+  text-indent: 30px;
+}
+
+.condition-info, .condition-nav {
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-align: justify-all;
+}
+
+.condition-nav {
+  list-style-type: decimal;
+  margin-left: 25px;
+}
+@media (min-width: 1000px) {
+  .condition-nav {
+    margin-left: 50px;
+  }
+}
+
+#registration_container .box, .container .box, .text-indent-30 .box {
+  padding-top: 25px;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  #registration_container .box, .container .box, .text-indent-30 .box {
+    padding-top: 25px;
+  }
+}
+@media (min-width: 768px) {
+  #registration_container .box, .container .box, .text-indent-30 .box {
+    padding-top: 5%;
+  }
+}
+#registration_container .box .text-header, .container .box .text-header, .text-indent-30 .box .text-header {
+  margin-bottom: 15px;
+  color: #0e6251;
+  color: #0e6251;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+}
+@media (min-width: 480px) {
+  #registration_container .box .text-header, .container .box .text-header, .text-indent-30 .box .text-header {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #registration_container .box .text-header, .container .box .text-header, .text-indent-30 .box .text-header {
+    font-size: 2.3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+}
+#registration_container .box .condition-info, .container .box .condition-info, .text-indent-30 .box .condition-info, #registration_container .box .condition-nav, .container .box .condition-nav, .text-indent-30 .box .condition-nav {
+  color: #2b2b2b;
+  color: #2b2b2b;
+  line-height: 1.3;
+  font-weight: 300;
+}
+@media (min-width: 780px) {
+  #registration_container .box .condition-info, .container .box .condition-info, .text-indent-30 .box .condition-info, #registration_container .box .condition-nav, .container .box .condition-nav, .text-indent-30 .box .condition-nav {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+#registration_container .condition-requirement h5, .container .condition-requirement h5, .text-indent-30 .condition-requirement h5 {
+  margin-top: 15px;
+  color: #873600;
+  font-size: 1.5rem;
+}
+#registration_container .agreement, .container .agreement, .text-indent-30 .agreement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  min-height: 50px;
+  margin: 25px auto;
+}
+#registration_container .agreement label, .container .agreement label, .text-indent-30 .agreement label {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+}
+#registration_container .agreement label span, .container .agreement label span, .text-indent-30 .agreement label span {
+  margin-left: 5px;
+}
+#registration_container .agreement .menuitem, .container .agreement .menuitem, .text-indent-30 .agreement .menuitem {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#registration_container .agreement .menuitem .btn, .container .agreement .menuitem .btn, .text-indent-30 .agreement .menuitem .btn {
+  width: 200px;
+  pointer-events: none;
+  background-color: #eeeeee;
+  border-color: #afabab;
+  color: #2b2b2b;
+  opacity: 0.3;
+}
+#registration_container .agreement .menuitem.show .btn, .container .agreement .menuitem.show .btn, .text-indent-30 .agreement .menuitem.show .btn {
+  pointer-events: auto;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  opacity: 1;
+}
+
+#regiser_from_container.register-form-container {
+  width: 100%;
+  height: 100%;
+}
+#regiser_from_container.register-form-container .register-container .register-box {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "top" "middle";
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+@media (min-width: 800px) {
+  #regiser_from_container.register-form-container .register-container .register-box {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+@media (min-width: 1240px) {
+  #regiser_from_container.register-form-container .register-container .register-box {
+    width: 800px;
+  }
+}
+#regiser_from_container.register-form-container .register-container .register-box .text-header {
+  grid-area: top;
+  text-align: center;
+}
+#regiser_from_container.register-form-container .register-container .register-box .text-header h3 {
+  font-size: 2rem;
+}
+@media (min-width: 780px) {
+  #regiser_from_container.register-form-container .register-container .register-box .text-header h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 780px) and (min-width: 1200px) {
+  #regiser_from_container.register-form-container .register-container .register-box .text-header h3 {
+    font-size: 3.5rem;
+  }
+}
+#regiser_from_container.register-form-container .register-container .register-box .form-container {
+  color: #909090;
+  grid-area: middle;
+}
+#regiser_from_container.register-form-container .register-container .register-box .form-container .content-label {
+  display: grid;
+  max-width: 500px;
+  grid-gap: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+}
+#regiser_from_container.register-form-container .register-container .register-box .form-container .grid-group {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-flow: wrap;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+#regiser_from_container.register-form-container .register-container .register-box .form-container .grid-group .form-group {
+  width: 100%;
+  margin: 5px auto;
+}
+#regiser_from_container.register-form-container .register-container .register-box .form-container .grid-group .form-group label {
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 576px) {
+  #regiser_from_container.register-form-container .register-container .register-box .form-container .grid-group {
+    flex-flow: nowrap;
+  }
+}
+#regiser_from_container.register-form-container .register-container .register-box .form-container .form-content {
+  display: grid;
+  grid-gap: 2em;
+}
+@media (min-width: 800px) {
+  #regiser_from_container.register-form-container .register-container .register-box .form-container .form-content {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: auto;
+  }
+}

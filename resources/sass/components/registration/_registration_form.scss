@@ -1,0 +1,88 @@
+#regiser_from_container {
+    &.register-form-container {
+        width: 100%;
+        height: 100%;
+
+        .register-container {
+            .register-box {
+                display: grid;
+                grid-template-rows: auto 1fr;
+                grid-template-columns: 1fr;
+                grid-template-areas: "top" "middle";
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                margin-top: 15px;
+                @include breakpoint(800px, min) {
+                    width: 100%;
+                    margin-top: 25px;
+                }
+                @include breakpoint(1240px, min) {
+                    width: 800px;
+                }
+
+                .text-header {
+                    grid-area: top;
+                    text-align: center;
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    @include breakpoint(780px, min) {
+                        h3 {
+                            font-size: 2.5rem;
+                            @include breakpoint(1200px, min) {
+                                font-size: 3.5rem;
+                            }
+                        }
+                    }
+                }
+                .form-container {
+                    color: rgb(144, 144, 144);
+                    grid-area: middle;
+
+                    .content-label {
+                        display: grid;
+                        max-width: 500px;
+                        grid-gap: 10px;
+                        grid-template-rows: 1fr;
+                        grid-template-columns: auto auto;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .grid-group {
+                        display: flex;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        flex-flow: wrap;
+                        column-gap: 1rem;
+                        .form-group {
+                            width: 100%;
+                            margin: 5px auto;
+                            label {
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
+
+                        @include breakpoint(576px, min) {
+                            flex-flow: nowrap;
+                        }
+                    }
+
+                    .form-content {
+                        display: grid;
+                        grid-gap: 2em;
+                    }
+
+                    @include breakpoint(800px, min) {
+                        .form-content {
+                            display: grid;
+                            grid-gap: 2em;
+                            grid-template-columns: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

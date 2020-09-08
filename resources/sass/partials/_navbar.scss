@@ -1,0 +1,24 @@
+@import '././mixins/colors';
+.hidden{
+  display: none;
+}
+.navbar {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    &.bg-custom{
+        @include bg-rgba($turquoise-900, 1);
+    }
+    .navbar-menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        .nav-item {
+            list-style-type: none;
+        }
+        .nav-link {
+            display: block;
+            padding: 0.5rem .5rem;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import './flat_design_colors_full';
+@mixin tx-rgba($color, $opacity)
+{
+  color: $color;
+  color: rgba($color, $opacity);
+}
+@mixin bg-rgba($color, $opacity)
+{
+  background: $color;
+  background: rgba($color, $opacity);
+}
