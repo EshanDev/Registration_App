@@ -11,6 +11,8 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    //require('validate.js');
+    require('jquery-validation');
 } catch (e) {}
 
 /**

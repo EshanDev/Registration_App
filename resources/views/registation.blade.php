@@ -13,7 +13,6 @@
 			<h2 class="text-header text-center">
 				<div>เงื่อนไขและคุณสมบัติ</div>
 				<div>ผู้มีสิทธิ์ลงทะเบียน</div>
-				<span>{{ $user }}</span>
 			</h2>
 			<div class="condition-content">
 				<div class="condition-info">
@@ -48,13 +47,19 @@
 				</div>
 			</div>
 			<div class="agreement">
-				<label><input type="checkbox"><span>ยอมรับเงื่อนไขและข้อตกลง</span></label>
+
 
 				<div class="menuitem">
-					<form action="{{ route('register.code.sent') }}" method="POST">
+					<form action="{{ route('register.code.sent') }}" method="POST" role="form" id="send_code_form" autocomplete="off">
 						@csrf
+						<div id="agree_mail" class="form-group">
+							<label for="email">กรอกที่อยู่อีเมล์</label>
+							<input type="email" id="email" name="email" class="form-control">
+							<span class="text-danger">{{ $errors->first('email') }}</span>
+							<label class="text-center justify-content-center pt-4"><input type="checkbox"><span>ยอมรับเงื่อนไขและข้อตกลง</span></label>
+						</div>
 						<input type="hidden" id="code" name="code" value="{{ $var }}">
-						<button type="submit" class="btn btn-success">ลงทะเบียน</button>
+						<button type="submit" class="btn btn-success">รับโค๊ดเพื่อลงทะเบียน</button>
 					</form>
 				</div>
 			</div>
@@ -65,10 +70,9 @@
 
 
 @section('script')
-
 <script>
 	$('input').change(function(){
-  var $this = $(this), $div = $('div.menuitem');
+  var $this = $(this), $div = $('div.menuitem')
   if( $this.is(':checked') )
   {
     $div.addClass('show');
@@ -82,5 +86,24 @@
 function RegisterPage() {
 	window.location = "{{ route('students.register')}}?user={{$var}}";
 }
+
+
+$("#send_code_form").validate({
+
+	rules: {
+		email: {
+			required: true,
+			maxlength: 50,
+			email: true
+		},
+	},
+	messages: {
+		email: {
+			required: "กรุณาระบุที่อยู่สำหรับส่ง Registration Code",
+			email: "รูปแบบอีเมล์ไม่ถูกต้อง",
+		},
+	},
+});
+
 </script>
 @endsection

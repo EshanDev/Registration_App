@@ -31,4 +31,8 @@ class ControlPanelController extends Controller
 
 		return Redirect::to('/students/register/'. $code)->with('code', $code)->with('user', $user);
 	}
+
+	public function emailValidation(Request $request){
+
+    }
 }

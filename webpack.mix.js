@@ -12,7 +12,6 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-	.js('node_modules/jquery/dist/jquery.js', 'public/js')
 	.js('resources/js/registration.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/registration.scss', 'public/css')

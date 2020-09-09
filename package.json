@@ -27,5 +27,8 @@
         "vue-router": "^3.4.3",
         "vue-template-compiler": "^2.6.10",
         "vuex": "^3.5.1"
+    },
+    "dependencies": {
+        "jquery-validation": "^1.19.2"
     }
 }

@@ -239,12 +239,37 @@
   color: #2b2b2b;
   opacity: 0.3;
 }
+#registration_container .agreement .menuitem #email-error, .container .agreement .menuitem #email-error, .text-indent-30 .agreement .menuitem #email-error {
+  padding-top: 5px;
+  color: red;
+  letter-spacing: 1px;
+}
 #registration_container .agreement .menuitem.show .btn, .container .agreement .menuitem.show .btn, .text-indent-30 .agreement .menuitem.show .btn {
   pointer-events: auto;
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
   opacity: 1;
+}
+
+@media (min-width: 1000px) {
+  .main-container #registration_container, .main-container .container, .main-container .text-indent-30 {
+    height: 100%;
+    display: grid;
+    padding-top: 5vh;
+  }
+  .main-container #registration_container .text-header, .main-container .container .text-header, .main-container .text-indent-30 .text-header {
+    font-size: 3rem;
+    margin-bottom: -1rem;
+  }
+}
+.main-container #registration_container .menuitem .form-group, .main-container .container .menuitem .form-group, .main-container .text-indent-30 .menuitem .form-group {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.main-container #registration_container .menuitem .hidden, .main-container .container .menuitem .hidden, .main-container .text-indent-30 .menuitem .hidden {
+  display: none;
 }
 
 #regiser_from_container.register-form-container {

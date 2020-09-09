@@ -9,7 +9,10 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<title>@yield('title', 'Registation Page')</title>
 
-	<link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+	<script src="{{ asset('js/jquery.min.js') }}"></script>
+	<script src="{{ asset('js/app.js') }}"></script>
+
 	@yield('stylesheet')
 </head>
 
@@ -57,8 +60,6 @@
 		</div>
 	</div>
 
-
-	<script src="{{ mix('js/app.js') }}"></script>
 	@yield('script')
 </body>
 
