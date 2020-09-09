@@ -104,7 +104,7 @@ eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Laravel_Workshop\server\resources\js\registration.js */"./resources/js/registration.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\Registration_App\resources\js\registration.js */"./resources/js/registration.js");
 
 
 /***/ })

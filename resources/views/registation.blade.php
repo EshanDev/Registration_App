@@ -1,3 +1,6 @@
+<php
+    use Illuminate\Support\Facades\URL;
+    ?>
 @extends('layouts.register')
 
 @section('title')
@@ -82,12 +85,9 @@
     $div.removeClass('show');
   }
 }).change();
+    
 
-// function RegisterPage() {
-// 	window.location = "{{ route('students.register')}}?user={{$var}}";
-// }
-
-	var base_url = "{{\Illuminate\Support\Facades\URL::to('/registration')}}";
+	var base_url = "{{URL::to('/registration')}}";
 $("#send_code_form").validate({
 
 	rules: {
