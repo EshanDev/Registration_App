@@ -252,7 +252,7 @@
   opacity: 1;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 2000px) {
   .main-container #registration_container, .main-container .container, .main-container .text-indent-30 {
     height: 100%;
     display: grid;

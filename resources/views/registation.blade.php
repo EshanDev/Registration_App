@@ -83,24 +83,35 @@
   }
 }).change();
 
-function RegisterPage() {
-	window.location = "{{ route('students.register')}}?user={{$var}}";
-}
+// function RegisterPage() {
+// 	window.location = "{{ route('students.register')}}?user={{$var}}";
+// }
 
-
+	var base_url = "{{\Illuminate\Support\Facades\URL::to('/registration')}}";
 $("#send_code_form").validate({
 
 	rules: {
 		email: {
 			required: true,
 			maxlength: 50,
-			email: true
+			email: true,
+
+			remote: {
+				url: base_url + "/validate_email",
+				type: "post",
+				data: {
+					_token: function() {
+						return "{{ csrf_token() }}"
+					}
+				}
+			}
 		},
 	},
 	messages: {
 		email: {
 			required: "กรุณาระบุที่อยู่สำหรับส่ง Registration Code",
 			email: "รูปแบบอีเมล์ไม่ถูกต้อง",
+			remote: "อีเมล์นี้ได้ใช้ลงทะเบียนไว้แล้ว"
 		},
 	},
 });
